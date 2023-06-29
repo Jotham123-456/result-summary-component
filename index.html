@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Outfit:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body{
+      font-family: Hanken Grotesk;
+    }
+    .attribution { 
+      font-size: 11px; text-align: center; 
+      margin-bottom: 20px;
+    }
+    .attribution a {
+       color: hsl(228, 45%, 44%);
+       }
+       .container1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+       }
+       .container2{
+        width: 550px;
+        display: grid;
+        grid-template-columns:300px 300px;
+        justify-content: center;
+        box-shadow: 20px 20px 50px rgba(0,0,0,0.1);
+        border-radius: 20px 20px 20px 20px;    
+        height: 397px;  
+        width: 602px;
+       }
+       .div1{
+        background-image: linear-gradient(180deg,rgb(120, 87, 255),rgb(46, 43, 233));
+        border:0;
+        height: 85%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0 40px 50px 40px;
+        border-radius: 20px;
+       }
+       .circle{
+        width: 130px;
+        height: 130px;
+        border-radius: 65px;
+        background-image:linear-gradient(180deg, rgb(78, 33, 202), rgba(36, 33, 202, 0));
+        margin: auto;
+        text-align: center;
+        vertical-align: middle;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+       .block{
+        display: block;
+       }
+       .bold{
+        font-size: 50px;
+        font-weight: 700;
+       }
+       .div1 p,h3,h2{
+        color: hsl(221, 100%, 96%) ;
+       }
+       .div2{
+         height: 85%;
+         text-align: center;
+         background-color: #fff;
+         border-radius:0px 20px 20px 0px;
+         padding:0 0 50px 0;
+       }
+        .div2 h3{
+        color:rgb(48, 59, 90);
+      }
+      .div2 div{
+        margin-top: 10px;
+        padding: 10px 5px;
+      }
+      .align{
+        vertical-align: middle;
+      }
+      .react{
+        background-color: rgba(255, 87, 87,0.2);
+        width: 75%;
+        vertical-align: top;
+        margin: auto;
+        border-radius: 12px;
+        color:rgb(255, 87, 8);
+        font-weight: 600;
+
+      }
+     .memory{
+      background-color:  rgba(255, 176, 31,0.2);
+        width: 75%;
+        vertical-align: top;
+        margin: auto;
+        border-radius: 12px;
+        color: rgb(255, 176, 31);
+        font-weight: 600;
+     }
+     .verbal{
+       background-color: rgba(0, 189, 145,0.2);
+        width: 75%;
+        vertical-align: top;
+        margin: auto;
+        border-radius: 12px;
+        color:  rgb(0, 189, 145);
+        font-weight: 600;
+     }
+     .visual{
+      background-color:  rgba(200, 199, 255,0.2);
+        width: 75%;
+        vertical-align: top;
+        margin: auto;
+        border-radius: 12px;
+        color: rgb(17, 37, 212);
+        font-weight: 600;
+     }
+
+      .color1{
+        color:rgb(48, 59, 90);
+        margin-left: 40px;
+      }
+      .color2{
+        color: rgba(48, 59, 90,0.25);
+      }
+      .cont-btn{
+        border: 0;
+        background-color: rgb(48, 59, 90);
+        width: 80%;
+        color:#fff;
+        padding: 15px 10px;
+        border-radius: 25px;
+        font-weight: 600;
+        margin-top: 25px;
+      }
+  </style>
+</head>
+<body>
+
+  <!--Your Result
+    https://www.youtube.com/watch?v=M1_v5HBVHWo
+    https://www.youtube.com/watch?v=M1_v5HBVHWo&t=3667s
+ 
+  -->
+<div class="container1">
+  <div class="container2">
+    <div class="div1">
+      <h3>Your Result</h3>
+      <div class="circle"><p><span class="block bold">76</span> of 100</p></div>
+      <h2>Great</h2>
+  <p>You scored higher than 65% of the people who have taken these tests.</p>
+  </div>
+    <div class="div2">
+      <h3>Summary</h3>
+      <div class="react">
+         <span class="align"><img src="icon-reaction.svg" alt=""></span>
+          Reaction
+           <span class="color1">80</span> <span class="color2">/ 100</span>
+      </div>
+      <div class="memory">
+        <span class="align"><img src="icon-memory.svg" alt=""></span>
+        Memory
+        <span class="color1">92</span> <span class="color2">/ 100</span>
+      </div>
+      <div class="verbal">
+        <span class="align"><img src="icon-verbal.svg" alt=""></span>
+        Verbal
+        <span class="color1">61</span> <span class="color2">/ 100</span>
+        </div>
+      <div class="visual">
+        <span class="align"><img src="icon-visual.svg" alt=""></span>
+        Visual
+        <span class="color1">72</span> <span class="color2">/ 100</div></span>
+        <button class="cont-btn">Continue</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="test"></div>
+
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Adeyele Jotham</a>.
+  </div>
+</body>
+</html>
